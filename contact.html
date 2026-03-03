@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜清和総合病院</title>
+    <meta name="description" content="清和総合病院へのお問い合わせ。診療・健康診断・採用などに関するご質問はこちらからどうぞ。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="header__inner"><a href="index.html" class="header__logo">
+                <div class="header__logo-icon" aria-hidden="true">✚</div>
+                <div class="header__logo-text"><span class="header__logo-name">清和総合病院</span><span
+                        class="header__logo-sub">SEIWA GENERAL HOSPITAL</span></div>
+            </a><button class="header__hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="shinryou.html">診療案内</a></li>
+                    <li class="header__nav-item"><a href="doctors.html">医師紹介</a></li>
+                    <li class="header__nav-item"><a href="features.html">当院の特徴</a></li>
+                    <li class="header__nav-item"><a href="first-visit.html">初診の方へ</a></li>
+                    <li class="header__nav-item"><a href="access.html">アクセス</a></li>
+                    <li class="header__nav-item"><a href="news.html">お知らせ</a></li>
+                </ul><a href="contact.html" class="header__cta">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1 class="page-header__title">お問い合わせ</h1>
+        <p class="page-header__subtitle">Contact</p>
+    </div>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="index.html">ホーム</a></li>
+            <li class="breadcrumb__separator">›</li>
+            <li class="breadcrumb__item" aria-current="page">お問い合わせ</li>
+        </ol>
+    </nav>
+
+    <section class="section">
+        <div class="container container--narrow">
+            <div class="section__header fade-in">
+                <p class="section__subtitle">Contact Form</p>
+                <h2 class="section__title">お問い合わせフォーム</h2>
+                <p class="section__description">診療・健康診断・採用・その他のご質問は、下記フォームよりお気軽にお送りください。<br><span
+                        style="color:var(--color-error);font-weight:600">*</span> は必須項目です。</p>
+            </div>
+
+            <form id="contact-form" class="fade-in" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="contact-name">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="contact-name" class="form-input" placeholder="例：田中 太郎" data-required
+                        data-label="お名前">
+                    <p class="form-error">この項目は必須です</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact-kana">フリガナ <span class="required">必須</span></label>
+                    <input type="text" id="contact-kana" class="form-input" placeholder="例：タナカ タロウ" data-required
+                        data-label="フリガナ">
+                    <p class="form-error">この項目は必須です</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact-email">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="contact-email" class="form-input" placeholder="例：example@email.com"
+                        data-required data-label="メールアドレス">
+                    <p class="form-error">この項目は必須です</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact-tel">お電話番号 <span class="optional">任意</span></label>
+                    <input type="tel" id="contact-tel" class="form-input" placeholder="例：03-1234-5678" data-type="tel"
+                        data-label="お電話番号">
+                    <p class="form-error">正しい電話番号を入力してください</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact-category">お問い合わせ種別 <span class="required">必須</span></label>
+                    <select id="contact-category" class="form-select" data-required data-label="お問い合わせ種別">
+                        <option value="">選択してください</option>
+                        <option value="診療について">診療について</option>
+                        <option value="健康診断について">健康診断について</option>
+                        <option value="入院について">入院について</option>
+                        <option value="採用について">採用について</option>
+                        <option value="その他">その他</option>
+                    </select>
+                    <p class="form-error">この項目は必須です</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact-message">お問い合わせ内容 <span class="required">必須</span></label>
+                    <textarea id="contact-message" class="form-textarea" placeholder="お問い合わせ内容をご入力ください" data-required
+                        data-label="お問い合わせ内容"></textarea>
+                    <p class="form-error">この項目は必須です</p>
+                </div>
+
+                <div
+                    style="background:var(--color-bg);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-xl)">
+                    <p style="font-size:var(--font-size-sm);color:var(--color-text-light);line-height:1.8">
+                        ※ 頂いたお問い合わせには、2営業日以内にご回答いたします。<br>
+                        ※ お急ぎの場合は、お電話（03-1234-5678）にてご連絡ください。<br>
+                        ※ 診療に関する緊急のご相談は、直接ご来院またはお電話にてお願いいたします。
+                    </p>
+                </div>
+
+                <div style="text-align:center">
+                    <button type="submit" class="btn btn--primary btn--lg btn--block"
+                        style="max-width:400px;margin:0 auto">確認画面へ進む</button>
+                </div>
+            </form>
+
+            <!-- Confirmation Panel -->
+            <div id="confirm-panel" class="confirm-panel fade-in">
+                <h3 class="confirm-panel__title">入力内容の確認</h3>
+                <p
+                    style="text-align:center;font-size:var(--font-size-sm);color:var(--color-text-light);margin-bottom:var(--space-xl)">
+                    以下の内容でよろしければ「送信する」ボタンを押してください。</p>
+                <!-- Items will be dynamically inserted here -->
+                <div class="confirm-panel__actions">
+                    <button type="button" id="confirm-back" class="btn btn--outline-dark">修正する</button>
+                    <button type="button" id="confirm-submit" class="btn btn--primary btn--lg">送信する</button>
+                </div>
+            </div>
+
+            <!-- Success Message -->
+            <div id="success-message" class="success-message fade-in">
+                <div class="success-message__icon">✅</div>
+                <h3 class="success-message__title">送信完了</h3>
+                <p class="success-message__text">お問い合わせありがとうございます。<br>2営業日以内にご回答いたしますので、しばらくお待ちください。</p>
+                <a href="index.html" class="btn btn--primary btn--arrow">トップページへ戻る</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--bg">
+        <div class="container">
+            <div class="section__header fade-in">
+                <h2 class="section__title">お電話でのお問い合わせ</h2>
+            </div>
+            <div style="text-align:center" class="fade-in">
+                <p
+                    style="font-size:var(--font-size-2xl);font-weight:700;color:var(--color-primary);letter-spacing:.04em;margin-bottom:var(--space-sm)">
+                    ☎ 03-1234-5678</p>
+                <p style="font-size:var(--font-size-sm);color:var(--color-text-light)">受付時間：平日 9:00〜17:30 ／ 土曜
+                    9:00〜12:30</p>
+                <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);margin-top:var(--space-sm)">※
+                    日曜・祝日は休診です（救急外来は24時間対応）</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <p class="footer__brand-name">清和総合病院</p>
+                <address class="footer__brand-address">〒100-0001<br>東京都千代田区千代田1-1-1</address>
+                <p class="footer__brand-tel">☎ 03-1234-5678</p>
+            </div>
+            <div>
+                <p class="footer__nav-title">診療について</p>
+                <ul class="footer__nav-list">
+                    <li><a href="shinryou.html">診療案内</a></li>
+                    <li><a href="naika.html">内科</a></li>
+                    <li><a href="geka.html">外科</a></li>
+                    <li><a href="shonika.html">小児科</a></li>
+                    <li><a href="doctors.html">医師紹介</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer__nav-title">ご利用の方へ</p>
+                <ul class="footer__nav-list">
+                    <li><a href="first-visit.html">初診の方へ</a></li>
+                    <li><a href="hospitalization.html">入院案内</a></li>
+                    <li><a href="health-check.html">健康診断</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer__nav-title">病院情報</p>
+                <ul class="footer__nav-list">
+                    <li><a href="features.html">当院の特徴</a></li>
+                    <li><a href="facilities.html">設備紹介</a></li>
+                    <li><a href="about.html">法人情報</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 医療法人清和会 清和総合病院. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top" aria-label="ページトップへ戻る">↑</a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
